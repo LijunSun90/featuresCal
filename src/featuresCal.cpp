@@ -95,8 +95,8 @@ int main (int argc, char** argv){
     extractor->compute(img_2, keypoints_2, descriptors_2);
 
     // Step 3: Matching descriptor vectors using BFMatcher.
-    matcher_bf.match(descriptors_2, descriptors_1, matches);;
-
+    matcher_bf.match(descriptors_1, descriptors_2, matches);
+    
     // Display results.
     cv::drawMatches(
         img_1, 
@@ -146,7 +146,7 @@ int main (int argc, char** argv){
     extractor->compute(img_2, keypoints_2, descriptors_2);
 
     // Step 3: Matching descriptor vectors using BFMatcher.
-    matcher_bf.match(descriptors_2, descriptors_1, matches);
+    matcher_bf.match(descriptors_1, descriptors_2, matches);
 
     // Display results.
     cv::drawMatches(
@@ -197,7 +197,7 @@ int main (int argc, char** argv){
     extractor->compute(img_2, keypoints_2, descriptors_2);
 
     // Step 3: Matching descriptor vectors using BFMatcher.
-    matcher_bf.match(descriptors_2, descriptors_1, matches);;
+    matcher_bf.match(descriptors_1, descriptors_2, matches);
 
     // Display results.
     cv::drawMatches(
@@ -248,7 +248,7 @@ int main (int argc, char** argv){
     extractor->compute(img_2, keypoints_2, descriptors_2);
 
     // Step 3: Matching descriptor vectors using BFMatcher.
-    matcher_bf.match(descriptors_2, descriptors_1, matches);;
+    matcher_bf.match(descriptors_1, descriptors_2, matches);
 
     // Display results.
     cv::drawMatches(
@@ -307,7 +307,7 @@ int main (int argc, char** argv){
     extractor->compute(img_2, keypoints_2, descriptors_2);
 
     // Step 3: Matching descriptor vectors using BFMatcher.
-    matcher_bf.match(descriptors_2, descriptors_1, matches);;
+    matcher_bf.match(descriptors_1, descriptors_2, matches);
 
     // Display results.
     cv::drawMatches(
@@ -359,7 +359,7 @@ int main (int argc, char** argv){
     extractor->compute(img_2, keypoints_2, descriptors_2);
 
     // Step 3: Matching descriptor vectors using BFMatcher.
-    matcher_bf.match(descriptors_2, descriptors_1, matches);;
+    matcher_bf.match(descriptors_1, descriptors_2, matches);
 
     // Display results.
     cv::drawMatches(
@@ -413,7 +413,7 @@ int main (int argc, char** argv){
         cv::DrawMatchesFlags::DRAW_RICH_KEYPOINTS);
 
     // Step 3: Matching descriptor vectors using BFMatcher.
-    matcher_bf.match(descriptors_2, descriptors_1, matches);;
+    matcher_bf.match(descriptors_1, descriptors_2, matches);
 
     // Display results.
     cv::drawMatches(
@@ -460,7 +460,7 @@ int main (int argc, char** argv){
         cv::DrawMatchesFlags::DRAW_RICH_KEYPOINTS);
 
     // Step 3: Matching descriptor vectors using BFMatcher.
-    matcher_bf.match(descriptors_2, descriptors_1, matches);;
+    matcher_bf.match(descriptors_1, descriptors_2, matches);
 
     // Display results.
     cv::drawMatches(
@@ -508,7 +508,7 @@ int main (int argc, char** argv){
         cv::DrawMatchesFlags::DRAW_RICH_KEYPOINTS);
 
     // Step 3: Matching descriptor vectors using BFMatcher.
-    matcher_bf.match(descriptors_2, descriptors_1, matches);;
+    matcher_bf.match(descriptors_1, descriptors_2, matches);
 
     // Display results.
     cv::drawMatches(
@@ -554,7 +554,7 @@ int main (int argc, char** argv){
         cv::DrawMatchesFlags::DRAW_RICH_KEYPOINTS);
 
     // Step 3: Matching descriptor vectors using BFMatcher.
-    matcher_bf.match(descriptors_2, descriptors_1, matches);;
+    matcher_bf.match(descriptors_1, descriptors_2, matches);
 
     // Display results.
     cv::drawMatches(
@@ -617,7 +617,7 @@ int main (int argc, char** argv){
     if(descriptors_2.type()!=CV_32F) {
         descriptors_2.convertTo(descriptors_2, CV_32F);
     }
-    matcher_flann.match(descriptors_2, descriptors_1, matches);;
+    matcher_flann.match(descriptors_1, descriptors_2, matches);
 
     // Display results.
     cv::drawMatches(
