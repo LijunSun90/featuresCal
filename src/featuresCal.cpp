@@ -114,12 +114,12 @@ int main (int argc, char** argv){
     cv::moveWindow("Harris_Shi_Tomasi-Features-ORB-Extractor-BF-Matcher", 0, 0);
     // cv::imshow("outImg", outImg);
 
-    cv::waitKey(0);
-    cv::destroyAllWindows();
     cout << "\nStoring Harris_Shi_Tomasi-Features-ORB-Extractor-BF-Matcher..." << endl;
     cv::imwrite("results/keypoints-Harris-ORB-BF.JPG", outImg_1);
     cv::imwrite("results/matches-Harris-ORB-BF.JPG", outImg);
     cout << "\n---Done!---\n" << endl;
+    if(cv::waitKey(1000) == 27) exit(-1);
+    // // cv::destroyAllWindows();
 
     // ----------------------------------------------------------------------
     // ----------------------------------------------------------------------
@@ -165,12 +165,12 @@ int main (int argc, char** argv){
     cv::moveWindow("Blob-Features-ORB-Extractor-BF-Matcher", 0, 0);
     // cv::imshow("outImg", outImg);
 
-    cv::waitKey(0);
-    cv::destroyAllWindows();
     cout << "\nStoring Blob-Features-ORB-Extractor-BF-Matcher..." << endl;
     cv::imwrite("results/keypoints-Blob-ORB-BF.JPG", outImg_1);
     cv::imwrite("results/matches-Blob-ORB-BF.JPG", outImg);
     cout << "\n---Done!---\n" << endl;
+    if(cv::waitKey(1000) == 27) exit(-1);
+    // cv::destroyAllWindows();    
 
     // ----------------------------------------------------------------------
     // ----------------------------------------------------------------------
@@ -216,12 +216,12 @@ int main (int argc, char** argv){
     cv::moveWindow("FAST-Features-ORB-Extractor-BF-Matcher", 0, 0);
     // cv::imshow("outImg", outImg);
 
-    cv::waitKey(0);
-    cv::destroyAllWindows();
     cout << "\nStoring FAST-Features-ORB-Extractor-BF-Matcher..." << endl;
     cv::imwrite("results/keypoints-FAST-ORB-BF.JPG", outImg_1);
     cv::imwrite("results/matches-FAST-ORB-BF.JPG", outImg);
     cout << "\n---Done!---\n" << endl;
+    if(cv::waitKey(1000) == 27) exit(-1);
+    // cv::destroyAllWindows();    
 
     // ----------------------------------------------------------------------
     // ----------------------------------------------------------------------
@@ -267,13 +267,12 @@ int main (int argc, char** argv){
     cv::moveWindow("StarDetector-Features-ORB-Extractor-BF-Matcher", 0, 0);
     // cv::imshow("outImg", outImg);
 
-    cv::waitKey(0);
-    cv::destroyAllWindows();
     cout << "\nStoring StarDetector-Features-ORB-Extractor-BF-Matcher..." << endl;
     cv::imwrite("results/keypoints-StarDetector-ORB-BF.JPG", outImg_1);
     cv::imwrite("results/matches-StarDetector-ORB-BF.JPG", outImg);
     cout << "\n---Done!---\n" << endl;
-    
+    if(cv::waitKey(1000) == 27) exit(-1);
+    // cv::destroyAllWindows();     
 
 
     /* ******************************************************************* */
@@ -326,12 +325,12 @@ int main (int argc, char** argv){
     cv::moveWindow("Harris_Shi_Tomasi-Features-BRIEF-Extractor-BF-Matcher", 0, 0);
     // cv::imshow("outImg", outImg);
 
-    cv::waitKey(0);
-    cv::destroyAllWindows();
     cout << "\nStoring Harris_Shi_Tomasi-Features-BRIEF-Extractor-BF-Matcher..." << endl;
     cv::imwrite("results/keypoints-Harris-BRIEF-BF.JPG", outImg_1);
     cv::imwrite("results/matches-Harris-BRIEF-BF.JPG", outImg);
     cout << "\n---Done!---\n" << endl;
+    if(cv::waitKey(1000) == 27) exit(-1);
+    // cv::destroyAllWindows();    
 
     
     // ----------------------------------------------------------------------
@@ -378,12 +377,12 @@ int main (int argc, char** argv){
     cv::moveWindow("Harris_Shi_Tomasi-Features-FREAK-Extractor-BF-Matcher", 0, 0);
     // cv::imshow("outImg", outImg);
 
-    cv::waitKey(0);
-    cv::destroyAllWindows();
     cout << "\nStoring Harris_Shi_Tomasi-Features-FREAK-Extractor-BF-Matcher..." << endl;
     cv::imwrite("results/keypoints-Harris-FREAK-BF.JPG", outImg_1);
     cv::imwrite("results/matches-Harris-FREAK-BF.JPG", outImg);
     cout << "\n---Done!---\n" << endl;    
+    if(cv::waitKey(1000) == 27) exit(-1);
+    // cv::destroyAllWindows();     
 
 
 
@@ -432,12 +431,12 @@ int main (int argc, char** argv){
     cv::moveWindow("SIFT-Features-BF-Matcher", 0, 0);
     // cv::imshow("outImg", outImg);
 
-    cv::waitKey(0);
-    cv::destroyAllWindows();
     cout << "\nStoring SIFT-Features-BF-Matcher..." << endl;
     cv::imwrite("results/keypoints-SIFT-BF.JPG", outImg_1);
     cv::imwrite("results/matches-SIFT-BF.JPG", outImg);
     cout << "\n---Done!---\n" << endl;
+    if(cv::waitKey(1000) == 27) exit(-1);
+    // cv::destroyAllWindows();     
 
 
     // ----------------------------------------------------------------------
@@ -479,12 +478,12 @@ int main (int argc, char** argv){
     cv::moveWindow("SURF-Features-BF-Matcher", 0, 0);
     // cv::imshow("outImg", outImg);
 
-    cv::waitKey(0);
-    cv::destroyAllWindows();
     cout << "\nStoring SURF-Features-BF-Matcher..." << endl;
     cv::imwrite("results/keypoints-SURF-BF.JPG", outImg_1);
     cv::imwrite("results/matches-SURF-BF.JPG", outImg);
-    cout << "\n---Done!---\n" << endl;    
+    cout << "\n---Done!---\n" << endl;  
+    if(cv::waitKey(1000) == 27) exit(-1);
+    // cv::destroyAllWindows();       
 
 
 
@@ -527,12 +526,12 @@ int main (int argc, char** argv){
     cv::moveWindow("BRISK-Features-BF-Matcher", 0, 0);
     // cv::imshow("outImg", outImg);
 
-    cv::waitKey(0);
-    cv::destroyAllWindows();
     cout << "\nStoring BRISK-Features-BF-Matcher..." << endl;
     cv::imwrite("results/keypoints-BRISK-BF.JPG", outImg_1);
     cv::imwrite("results/matches-BRISK-BF.JPG", outImg);
-    cout << "\n---Done!---\n" << endl;       
+    cout << "\n---Done!---\n" << endl;   
+    if(cv::waitKey(1000) == 27) exit(-1);
+    // cv::destroyAllWindows();         
 
     // ----------------------------------------------------------------------
     // ----------------------------------------------------------------------
@@ -573,12 +572,12 @@ int main (int argc, char** argv){
     cv::moveWindow("ORB-Features-BF-Matcher", 0, 0);
     // cv::imshow("outImg", outImg);
 
-    cv::waitKey(0);
-    cv::destroyAllWindows();
     cout << "\nStoring ORB-Features-BF-Matcher..." << endl;
     cv::imwrite("results/keypoints-ORB-BF.JPG", outImg_1);
     cv::imwrite("results/matches-ORB-BF.JPG", outImg);
     cout << "\n---Done!---\n" << endl;  
+    if(cv::waitKey(1000) == 27) exit(-1);
+    // cv::destroyAllWindows();     
 
     /* ******************************************************************* */
     /* ******************************************************************* */
@@ -636,12 +635,12 @@ int main (int argc, char** argv){
     cv::moveWindow("Harris_Shi_Tomasi-Features-FREAK-Extractor-FALNN-Matcher", 0, 0);
     // cv::imshow("outImg", outImg);
 
-    cv::waitKey(0);
-    cv::destroyAllWindows();
     cout << "\nStoring Harris_Shi_Tomasi-Features-FREAK-Extractor-FLANN-Matcher..." << endl;
     cv::imwrite("results/keypoints-Harris-FREAK-FLANN.JPG", outImg_1);
     cv::imwrite("results/matches-Harris-FREAK-FLANN.JPG", outImg);
     cout << "\n---Done!---\n" << endl;
+    if(cv::waitKey(1000) == 27) exit(-1);
+    // cv::destroyAllWindows();     
 
 
     

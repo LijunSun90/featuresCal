@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/lijunsun/workspace/opencvProjects/featuresCal/src/featuresCal.cpp" "/home/lijunsun/workspace/opencvProjects/featuresCal/build/CMakeFiles/featuresCal.dir/src/featuresCal.cpp.o"
+  "/home/lijun/workspace/opencvProjects/featuresCal/src/featuresCal.cpp" "/home/lijun/workspace/opencvProjects/featuresCal/build/CMakeFiles/featuresCal.dir/src/featuresCal.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
